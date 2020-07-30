@@ -1,0 +1,14 @@
+
+.input-block__error {
+  display: none;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;  
+  color: rgb(194, 53, 128);
+
+  box-sizing: inherit;
+  padding: 0;
+  padding-top: 5px;
+  margin: 0;
+  margin-bottom: 5px;
+}

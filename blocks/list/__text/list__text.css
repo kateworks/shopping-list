@@ -1,0 +1,19 @@
+
+.list__text {
+	flex-grow: 1;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 24px;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+	box-sizing: inherit;
+	max-width: calc(100% - 90px);
+	height: 24px;
+	padding: 0;
+	padding-right: 5px;
+	margin: 0;
+}
+

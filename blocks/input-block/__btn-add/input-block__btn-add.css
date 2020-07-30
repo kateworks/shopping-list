@@ -1,0 +1,10 @@
+
+.input-block__btn-add {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 800;
+
+	width: 20%;
+	min-width: 45px;
+	height: 30px;
+}

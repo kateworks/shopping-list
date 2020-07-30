@@ -1,0 +1,27 @@
+
+.root__btn {
+	background-color: #fff;
+	border: 1px solid #333;
+	border-radius: 2px;
+	outline: none;
+	transition: box-shadow .3s ease;
+
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.root__btn:hover {
+	cursor: pointer;
+	box-shadow: 2px 2px 5px #333;
+}
+
+.root__btn:active {
+	box-shadow: 2px 2px 3px #333;
+	transform: translateY(2px);
+}
+
+.root__btn:disabled {
+	box-shadow: none;
+	cursor: default;
+}

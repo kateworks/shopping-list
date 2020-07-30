@@ -1,0 +1,11 @@
+
+.list__item {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+
+	box-sizing: inherit;
+	min-height: 40px;
+	padding: 0;
+	margin: 0;
+}

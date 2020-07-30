@@ -1,0 +1,20 @@
+
+.container {
+	/* background-color: #b3dbea; */
+	background-image: url(../../images/bg-square-lightblue.png);
+	background-size: 30px;
+	background-repeat: repeat;
+	border: 1px solid #333;
+	border-radius: 3px;
+	box-shadow: 2px 2px 5px #333;
+
+	box-sizing: border-box;
+	width: 50%;
+	min-width: 300px;
+	max-width: 600px;
+	min-height: 300px;
+	max-height: 90%;
+
+	padding: 0;
+	margin: 5vh auto;
+}

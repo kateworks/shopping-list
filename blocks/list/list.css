@@ -1,0 +1,8 @@
+
+.list {
+	box-sizing: border-box;
+	width: calc(90% - 20px);
+	padding: 0;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}

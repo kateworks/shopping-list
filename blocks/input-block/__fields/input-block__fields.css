@@ -1,0 +1,10 @@
+
+.input-block__fields {
+  display: flex;
+  flex-flow: column nowrap;
+
+  box-sizing: inherit;
+  width: 75%;
+  padding: 0;
+  margin: 0;
+}

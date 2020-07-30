@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="stylesheet" href="./pages/index.css">
+	<title>Shopping list example</title>
+</head>
+
+<body class="root">
+
+	<section class="container">
+
+		<h1 class="section-header">Shopping list</h1>
+
+		<div class="input-block">
+
+			<div class="input-block__fields">
+				<input class="input-block__item" name="item" type="text" 
+					placeholder="New item" maxlength="40" autofocus>
+				<span class="input-block__error" id="item-error">Ошибка</span>
+			</div>
+			
+			<button class="root__btn input-block__btn-add">Add</button>			
+		</div>
+
+		<ul class="list">
+		</ul>
+	</section>
+
+	<script src="scripts/validation.js"></script>
+	<script src="./scripts/create-list.js"></script>
+	<script src="./scripts/index.js"></script>
+</body>
+</html>
