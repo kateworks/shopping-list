@@ -3,11 +3,6 @@
 // Toggle buttons state
 //-------------------------------------------------------------------
 
-const addButton = document.querySelector('.input-block__btn-add');
-const inputItem = document.querySelector('.input-block__item');
-const inputError = document.querySelector('.input-block__error');
-
-
 const inputLength = function(input) {
 	return input.value.length;
 };
@@ -35,21 +30,30 @@ const toggleButtons = function() {
 const checkInput = function(input) {
 	const len = inputLength(input);
 	let errMsg = '';
+
 	if (len < 3 && len > 0) {
 		errMsg = 'New item must be at least 3 symbols long';
 	} 
-	// don't allow repeated items
+	if (listArray.indexOf(input.value.toLowerCase()) >= 0) {
+		errMsg = 'That item is already on the list';
+	}
 	return errMsg;
 };
 
 const showErrorMessage = function(input, error) {
-	input.classList.add('input-block__item_type_error');
-	error.classList.add('input-block__error_visible');
+	input.classList.add('input-form__item_type_error');
+	error.classList.add('input-form__error_visible');
 };
 
 const hideErrorMessage = function(input, error) {
-	input.classList.remove('input-block__item_type_error');
-	error.classList.remove('input-block__error_visible');
+	input.classList.remove('input-form__item_type_error');
+	error.classList.remove('input-form__error_visible');
+}
+
+const resetEditedContext = function() {
+	editedItem = null;
+	addButton.textContent = 'Add';
+	listArray = getItemsArray();
 }
 
 const inputCheckValidity = function(evt) {
@@ -65,6 +69,8 @@ const inputCheckValidity = function(evt) {
 	} else {
 		hideErrorMessage(input, inputError);
 	}
+
+	if (isEmpty && editedItem) resetEditedContext();
 	toggleAddButton(isValid && !isEmpty);
 	toggleEditButtons(isEmpty);
 }

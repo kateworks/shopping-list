@@ -1,5 +1,5 @@
 
-.input-block__item {
+.input-form__item {
 	font-size: 16px;
 	font-weight: 800;
 	line-height: 20px;
@@ -14,7 +14,7 @@
 	margin-bottom: 25px;
 }
 
-.input-block__item:focus {
+.input-form__item:focus {
 	outline: none;
 	border: 1px solid #333;
 	box-shadow: 2px 2px 5px #333;

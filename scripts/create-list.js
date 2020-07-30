@@ -2,10 +2,6 @@
 //-------------------------------------------------------------------
 // Create list 
 //-------------------------------------------------------------------
-const shoppingList = ['Apples', 'Pears', 'Oranges'];
-
-const list = document.querySelector('.list');
-
 
 const createButton = function(btnClass, btnText, btnAction) {
 	const btn = document.createElement('button');
@@ -39,19 +35,39 @@ const createListItem = function(text) {
 //-------------------------------------------------------------------
 // Create new list item
 
-const addListItem = function() {
-	if (inputLength(inputItem) === 0 ) { return; }
-	const item = createListItem(inputItem.value);
-	list.append(item);
+const resetData = function() {
 	inputItem.value = '';
 	toggleButtons();
+	listArray = getItemsArray();
+	inputItem.focus();
+};
+
+const addListItem = function() {
+	const item = createListItem(inputItem.value);
+	list.append(item);
+	resetData();
+};
+
+const saveEditedItem = function() {
+	editedItem.querySelector('.list__text').textContent = inputItem.value;
+	addButton.textContent = 'Add';
+	editedItem = null;
+	resetData();
+};
+
+const getItemsArray = function() {
+	const items = Array.from(list.querySelectorAll('.list__text'));
+	const result = items.map(item => {
+		return item.textContent.toLowerCase();
+	});
+	return result;
 };
 
 //-------------------------------------------------------------------
 // Create initial shopping list
 
 const initShoppingList = function(itemsArray) {
-	itemsArray.forEach( itemTxt => {
+	itemsArray.forEach(itemTxt => {
 		list.append(createListItem(itemTxt));
 	});
 	toggleButtons();

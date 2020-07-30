@@ -1,5 +1,5 @@
 
-.input-block__fields {
+.input-form__field {
   display: flex;
   flex-flow: column nowrap;
 

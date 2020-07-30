@@ -13,22 +13,25 @@
 
 		<h1 class="section-header">Shopping list</h1>
 
-		<div class="input-block">
+		<form class="input-form" name="input-form">
 
-			<div class="input-block__fields">
-				<input class="input-block__item" name="item" type="text" 
+			<label class="input-form__field">
+				<input class="input-form__item" name="item" type="text" 
 					placeholder="New item" maxlength="40" autofocus>
-				<span class="input-block__error" id="item-error">Ошибка</span>
-			</div>
+				<span class="input-form__error">Ошибка</span>
+			</label>
 			
-			<button class="root__btn input-block__btn-add">Add</button>			
-		</div>
+			<button class="root__btn input-form__btn-add" type="submit" value="Add">
+				Add
+			</button>			
+		</form>
 
 		<ul class="list">
 		</ul>
 	</section>
 
-	<script src="scripts/validation.js"></script>
+	<script src="./scripts/declaration.js"></script>
+	<script src="./scripts/validation.js"></script>
 	<script src="./scripts/create-list.js"></script>
 	<script src="./scripts/index.js"></script>
 </body>
