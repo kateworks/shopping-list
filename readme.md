@@ -1,11 +1,12 @@
 
-------------------
+
 # Shopping list
-------------------
 
-Working with DOM.
 
-[Page:](https://kateworks.github.io/shopping-list/)
+Working with DOM tree.
+
+
+[Click here to run.](https://kateworks.github.io/shopping-list/)
 
 
 

@@ -32,10 +32,10 @@ const checkInput = function(input) {
 	let errMsg = '';
 
 	if (len < 3 && len > 0) {
-		errMsg = 'New item must be at least 3 symbols long';
+		errMsg = 'New item must be at least 3 characters long.';
 	} 
 	if (listArray.indexOf(input.value.toLowerCase()) >= 0) {
-		errMsg = 'That item is already on the list';
+		errMsg = 'This item is already on the list!';
 	}
 	return errMsg;
 };
