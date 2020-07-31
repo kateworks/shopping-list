@@ -1,12 +1,12 @@
 
 
-# Shopping list
+## __Shopping list__
 
 
 Working with DOM tree.
 
+* https://kateworks.github.io/shopping-list/
 
-[Click here to run.](https://kateworks.github.io/shopping-list/)
 
 
 
